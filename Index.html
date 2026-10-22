@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciene AI Signals</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #08111f;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #101d30;
+  padding: 24px 10px;
+}
+h1 { color: #20e3a2; }
+.card {
+  background: #142238;
+  margin: 18px;
+  padding: 20px;
+  border-radius: 14px;
+}
+button {
+  padding: 13px 20px;
+  margin: 6px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  background: #20e3a2;
+  color: #07111d;
+}
+small { color: #bdc9d8; }
+</style>
+</head>
+<body>
+<header>
+<h1>CIENE AI SIGNALS</h1>
+<p>Forex & Binary Demo Signal Center</p>
+</header>
+<div class="card">
+<h2>Trading Dashboard</h2>
+<p>Market: <b>Demo Mode</b></p>
+<p>Choose a demo signal type</p>
+<button onclick="showSignal('RISE')">RISE</button>
+<button onclick="showSignal('FALL')">FALL</button>
+<button onclick="showSignal('OVER')">OVER</button>
+<button onclick="showSignal('UNDER')">UNDER</button>
+<h2 id="signal">Ready to practice?</h2>
+<p id="note">These are practice selections, not AI predictions.</p>
+</div>
+<div class="card">
+<h3>Risk Reminder</h3>
+<p>Practice with demo funds. No signal guarantees profit.</p>
+<small>Ciene AI Signals · Demo Version</small>
+</div>
+<script>
+function showSignal(choice) {
+  document.getElementById("signal").textContent =
+    "Demo selection: " + choice;
+  document.getElementById("note").textContent =
+    "This is a practice button, not a live market signal.";
+}
+</script>
+</body>
+</html>
